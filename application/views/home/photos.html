@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>photo gallery</title>
+<link href="<?php echo base_url('application/views/home/css/bootstrap.css'); ?>" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?php echo base_url('application/views/home/js/jquery.min.js'); ?>"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="<?php echo base_url('application/views/home/js/scripts.js'); ?>"></script>
+<link href="<?php echo base_url('application/views/home/css/styles.css'); ?>" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="<?php echo base_url('application/views/home/css/style.css'); ?>" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url('application/views/home/css/photos.css'); ?>" rel="stylesheet" type="text/css" media="all" />		
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Home" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- slide -->
+<script src="<?php echo base_url('application/views/home/js/responsiveslides.min.js'); ?>"></script>
+   <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+        nav: true,
+      });
+    });
+  </script>
+</head>
+<body >
+<!--header-->
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="<?php echo site_url(''); ?>">Kent Neighborhood</a></h1>
+			</div>
+		<!--//logo-->
+		
+		</div>	
+</div>
+<!--//-->	
+	<div class=" header-right">
+	<div id="photos-title">Photos Gallery</div>
+		<div class=" banner">
+			 <div class="slider">
+			    <div class="callbacks_container">
+			      <ul class="rslides" id="slider">		       
+					 <li>
+			          	 <div class="banner-item banner1">
+			          	</div>
+			         </li>
+					 <li>
+			          	 <div class="banner-item banner2">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner3">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner4">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner5">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner6">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner7">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner8">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner9">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner10">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner11">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner12">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner13">
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner14">
+			          	</div>
+			         </li>  		
+			      </ul>
+			  </div>
+			  <div id="my-pre-nav" class="my-nav" onclick="navs[0].click();">&lt</div>
+			  <div id="my-nex-nav" class="my-nav" onclick="navs[1].click();">&gt</div>
+			</div>
+		</div>
+	</div>
+
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript">
+	var navs;
+	$(function(){
+		navs = document.getElementsByClassName("callbacks_nav");
+		navs[0].style.display = "none";
+		navs[1].style.display = "none";
+		var pre = document.getElementById("my-pre-nav");
+		var nex = document.getElementById("my-nex-nav");
+		
+		// nex.click = navs[1].click;
+	});
+</script>
+
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-top-at">
+			<h4>Our Company</h4>
+				<ul class="nav-bottom">
+					<li><img src="<?php echo base_url('application/views/home/images/location.png'); ?>">kent neighborhood kent state OH, 44240</li>
+					<li><img src="<?php echo base_url('application/views/home/images/phone.png'); ?>">Call us : 330-xxx-xxxx</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><i> </i></a></li>
+					<li><a href="#"><i class="gmail"> </i></a></li>
+					<li><a href="#"><i class="twitter"> </i></a></li>
+				</ul>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="<?php echo base_url(''); ?>">Kent Neighborhood</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >Copyright &copy; kent state capstone group.2017</p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
+</div>
+<!--//footer-->
+</body>
+</html>

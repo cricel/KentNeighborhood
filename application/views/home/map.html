@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<link href="<?php echo base_url('application/views/home/css/bootstrap.css'); ?>" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?php echo base_url('application/views/home/js/jquery.min.js'); ?>"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="<?php echo base_url('application/views/home/js/scripts.js'); ?>"></script>
+<link href="<?php echo base_url('application/views/home/css/styles.css'); ?>" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="<?php echo base_url('application/views/home/css/style.css'); ?>" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Home" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- slide -->
+<script src="<?php echo base_url('application/views/home/js/responsiveslides.min.js'); ?>"></script>
+   <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+</head>
+<body >
+<!--header-->
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="<?php echo site_url(''); ?>">Kent Neighborhood</a></h1>
+			</div>
+		<!--//logo-->
+		
+		</div>	
+</div>
+<!--//-->	
+<center>
+<div id="apt-map" style="margin: 200px;height: 580px;width:960px;"> 
+    <iframe src="<?php echo base_url('application/views/home/googleapi.html');?>" frameborder="0" scrolling="no" height="400" width="700"> 
+    </iframe> 
+</div> 
+</center>
+
+<!--phone-->
+	<div class="phone">
+		<div class="container">
+			<div class="col-md-6">
+				<img src="<?php echo base_url('application/views/home/images/ph1.png'); ?>" class="img-responsive" alt=""/>
+			</div>
+			<div class="col-md-6 phone-text">
+				<h4>Search Homes Everywhere</h4>
+					<div class="text-1">
+						<h5>Custom Location Tracker</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
+					</div>
+					<div class="text-1">
+						<h5>Map Search</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
+					</div>
+					<div class="text-1">
+						<h5>Quick Details</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
+					</div>
+					<a href="<?php echo base_url('application/views/home/mobile_app.html'); ?>" class="hvr-sweep-to-right more">Download the App</a>
+			</div>
+		</div>
+	</div>
+
+
+<!--//phone-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-top-at">
+			<h4>Our Company</h4>
+				<ul class="nav-bottom">
+					<li><img src="<?php echo base_url('application/views/home/images/location.png'); ?>">kent neighborhood kent state OH, 44240</li>
+					<li><img src="<?php echo base_url('application/views/home/images/phone.png'); ?>">Call us : 330-xxx-xxxx</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><i> </i></a></li>
+					<li><a href="#"><i class="gmail"> </i></a></li>
+					<li><a href="#"><i class="twitter"> </i></a></li>
+				</ul>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="<?php echo base_url(''); ?>">Kent Neighborhood</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >Copyright &copy; kent state capstone group.2017</p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
+</div>
+<!--//footer-->
+</body>
+</html>
